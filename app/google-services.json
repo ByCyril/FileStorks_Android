@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "365789802647",
+    "firebase_url": "https://mathetic-1bb5f.firebaseio.com",
+    "project_id": "mathetic-1bb5f",
+    "storage_bucket": "mathetic-1bb5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365789802647:android:35a56240f611cbf3",
+        "android_client_info": {
+          "package_name": "com.bycyril.filestorks_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365789802647-obcp3q6ojrbknb5d1d95nu9ucfrkgngt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bycyril.filestorks_android",
+            "certificate_hash": "b0c1ee5fb8ccc373ca69bdc1112a0b1631358d59"
+          }
+        },
+        {
+          "client_id": "365789802647-caf6vpqe1fbpqordn64k6rmeqdidhf9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcOfM1zt1n4-AqTmpjWLvSkSFQqBjQKKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365789802647-caf6vpqe1fbpqordn64k6rmeqdidhf9f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "365789802647-vcbn1pa9qgj7r72o1fasv5j1qvu9g8cj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ByCyril.FileStorks"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
