@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     CreateNewSession createnewsession = new CreateNewSession(MainActivity.this);
     ConnectToSession connecttosession = new ConnectToSession(MainActivity.this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

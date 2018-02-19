@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FileStorks_Android</string>
+    <string name="title_activity_web">web</string>
 </resources>

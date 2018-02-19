@@ -3,6 +3,7 @@ package com.bycyril.filestorks_android;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,7 +31,7 @@ public class CreateNewSession {
     }
 
     public void createNewSession() {
-        String pipeline = generatePipelineCode();
+        final String pipeline = generatePipelineCode();
         String timestamp = getTimeStamp();
 
         Map<String, String> info = new HashMap<String, String>();
@@ -44,7 +45,8 @@ public class CreateNewSession {
                 if (databaseError != null) {
                     showError(databaseError.getMessage().toString());
                 } else {
-                    showError("Yay its working!!!");
+
+                    switchActivity();
                 }
 
             }
@@ -90,6 +92,12 @@ public class CreateNewSession {
 
         return pipeline;
 
+    }
+
+    private void switchActivity() {
+        Intent fileActivityIntent = new Intent(context, FileActivity.class);
+        fileActivityIntent.putExtra("pipeline", getPipelineCode());
+        context.startActivity(fileActivityIntent);
     }
 
 

@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FileActivity"></activity>
+        <activity android:name=".FileActivity" />
+        <activity android:name=".Web"></activity>
     </application>
 
 </manifest>

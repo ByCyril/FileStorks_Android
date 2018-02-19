@@ -32,7 +32,7 @@ public class ConnectToSession {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 if (dataSnapshot.hasChild(pipeline)) {
-                    switchActivity();
+                    switchActivity(pipeline);
                 } else {
                     showError("Pipeline code does not exist. Try a different pipeline code or create a new session");
                 }
@@ -45,8 +45,9 @@ public class ConnectToSession {
         });
     }
 
-    private void switchActivity() {
+    private void switchActivity(String pipeline) {
         Intent fileActivityIntent = new Intent(context, FileActivity.class);
+        fileActivityIntent.putExtra("pipeline", pipeline);
         context.startActivity(fileActivityIntent);
     }
 
